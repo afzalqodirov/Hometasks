@@ -10,3 +10,4 @@ def gugurt(n):
         elif i=='7':result+=3
         else:result+=4
     return result
+print(gugurt(n))
