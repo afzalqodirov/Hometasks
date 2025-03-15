@@ -6,12 +6,12 @@ def uchburchak(l :list,n:int,i: int=0):
     b=l[-2+i]
     c=l[-1+i]
     if a+b>c and a+c>b and b+c>a:
-        return f'{a} {b} {c}'
+        print(a,b,c)
     elif n==3+(-i):
-        return -1
+        print(-1)
     else:
         i-=1
-        return uchburchak(l,n,i)
-        
+        print(uchburchak(l,n,i))
 
-print(uchburchak(sorted(l1),n))
+
+uchburchak(sorted(l1),n)
