@@ -9,7 +9,7 @@ class CachedPropertyDescriptor:
             
 
     def __set__(self,inst,val):
-        if type(val)!=str:
+        if type(val)==int or type(val)==float:
             inst.val=val
             return
         raise Exception('Invalid expression was given')
